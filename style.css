@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+nav {
+  height: 20px !important;
+  font-size: 12px;
+  line-height: normal !important;
+}
+
+
+.history {
+  position: relative;
+  align-items: center !important;
+  line-height: 20px !important;
+  overflow: hidden;
+}
+
+.history > .icon-container {
+  display: flex !important;
+  align-items: center;
+  padding-left: 4px;
+}
+
+#history-icon,
+#history-icon .icon-overflow-wrap {
+  margin: 0 !important;
+  overflow: visible;
+}
+
+
+#history-icon svg {
+  top: -7px !important;
+  width: 18px !important;
+  height: 36px !important;
+}
+
+#history-time {
+  margin-left: 4px;
+}
+
+#history-mob {
+  margin-left: 4px;
+  height: 100%;
+}
+
+#history-region {
+  height: 100%;
+  text-align: left !important;
+}
+
+.dropdown.dropdown-history.opened {
+  position: relative;
+  display: flex;
+  width: 250px !important;
+  left:0px;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.history-current {
+  width: 100% !important;
+}
+
+.buttons {
+  display: flex !important;
+}
+
+.buttons .button svg {
+  display: none;
+}
+
+.buttons .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons .button:nth-of-type(1):before {
+  content: 'Toggle';
+}
+
+.buttons .button:nth-of-type(2):before {
+  content: 'Settings';
+}
+
+.dropdown:not(.opened) {
+  display: none !important;
+}
+
+.dropdown.opened {
+  display: flex !important;
+  width: 84px !important;
+  flex-wrap: wrap;
+}
+
+.dropdown.buttons.right {
+  top: 20px;
+}
+
+.buttons li.button:hover {
+  background: transparent !important;
+}
+
+li#init-menu {
+  display: none !important;
+}
+
+#patchnote {
+  overflow: visible;
+}
+
+#patchnote:before {
+  content: 'Waiting for combat...';
+  position: relative;
+  top: 8px;
+  font-size: 1.1em;
+}
+
+#patchnote > *{
+  display: none;
+}
+
+#background {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+} 
+
+.flex-column {
+  padding: 0 4px;
+}
+
+
+.flex-column.flex-column-i-name {
+  width: auto;
+  flex-grow: 1;
+  min-width: 0;
+  align-self: stretch;
+}
+.flex-column.flex-column-deal-accuracy {
+  width: 3.5rem;
+}
+
+.flex-column.flex-column-heal-over,
+.flex-column.flex-column-etc-death {
+  width: 2.5rem;
+}
